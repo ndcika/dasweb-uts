@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>HALLO.KOST</title>
+    <link rel="shortcut icon" href="img/icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section id="utama">
+        <nav id="myHeader">
+            <div class="logo-nav">
+                <a href="#home">
+                    <img src="img/icon.svg" alt="logo" width="50px">&nbsp;&nbsp;HALLO KOST</a>
+            </div>
+            <ul>
+                <li><a href="#utama">Utama</a></li>
+                <li><a href="#promo">Promo</a></li>
+                <li><a href="#hubungi-kami">Hubungi Kami</a></li>
+                <li><a href="#">Masuk</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div>
+                <h2>Mau Cari Kos?</h2>
+                <p>Dapatkan Info Kos Dapatkan Info Kos Terlengkap di <span id="hallo">HALLO.KOST</span></p>
+                <span class="dos"></span>
+                <form class="form-cari" action="#" method="GET">
+                    <input class="form" type="text" placeholder="Masukkan nama lokasi">
+                    <button class="tombol" type="submit">Cari</button>
+                </form>
+            </div>
+            <img src="img/header.svg" alt="header">
+        </div>
+    </section>
+
+    <section id="promo">
+        <div class="container-promo">
+            <div class="container-promo-head">
+                <p>PROMO NGEBUT</p>
+                <span class="dos2"></span>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">SEMUA KOTA
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#">Bogor</a>
+                        <a href="#">Bekasi</a>
+                        <a href="#">Jakarta</a>
+                        <a href="#">Malang</a>
+                        <a href="#">Semarang</a>
+                        <a href="#">Surabaya</a>
+                        <a href="#">Tangerang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slide-1">
+                    <div class="card-promo-1">
+                        <img src="img/kos1.jpg" alt="kos1">
+                        <div class="card-text-1">
+                            <p><span
+                                    id="wnt">WANITA</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keputih,
+                                KOTA SURABAYA</p>
+                            <p><span
+                                    id="dua">MAWAR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>Rp
+                                    1.999.999</del>
+                                <span id="diskon">50%</span>
+                            </p>
+                            <p>KM.Dalam - Wifi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                    id="total">Rp 1.000.000 / bulan</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-2">
+                    <div class="card-promo-1">
+                        <img src="img/kos2.jpg" alt="kos1">
+                        <div class="card-text-1">
+                            <p><span
+                                    id="wnt">WANITA</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dinoyo,
+                                KOTA MALANG</p>
+                            <p><span id="dua">KOS
+                                    APIKK</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>Rp
+                                    1.999.999</del>
+                                <span id="diskon">50%</span>
+                            </p>
+                            <p>KM.Dalam -
+                                Wifi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                    id="total">Rp 1.000.000 / bulan</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-3">
+                    <div class="card-promo-1">
+                        <img src="img/kos3.jpg" alt="kos1">
+                        <div class="card-text-1">
+                            <p><span
+                                    id="wnt">PRIA</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seturan,
+                                YOGYAKARTA</p>
+                            <p><span id="dua">KOS
+                                    JAGUAR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>Rp
+                                    1.999.999</del>
+                                <span id="diskon">50%</span>
+                            </p>
+                            <p>KM.Dalam -
+                                Wifi&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="total">Rp
+                                    1.000.000 / bulan</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-4">
+                    <div class="card-promo-1">
+                        <img src="img/kos4.jpg" alt="kos1">
+                        <div class="card-text-1">
+                            <p><span
+                                    id="wnt">PRIA</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seturan,
+                                YOGYAKARTA</p>
+                            <p><span id="dua">KOS
+                                    JAGUAR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>Rp
+                                    1.999.999</del>
+                                <span id="diskon">50%</span>
+                            </p>
+                            <p>KM.Dalam -
+                                Wifi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                    id="total">Rp 1.000.000 / bulan</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-5">
+                    <div class="card-promo-1">
+                        <img src="img/kos1.jpg" alt="kos1">
+                        <div class="card-text-1">
+                            <p><span
+                                    id="wnt">WANITA</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keputih,
+                                KOTA SURABAYA</p>
+                            <p><span
+                                    id="dua">MAWAR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>Rp
+                                    1.999.999</del>
+                                <span id="diskon">50%</span>
+                            </p>
+                            <p>KM.Dalam - Wifi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                    id="total">Rp 1.000.000 / bulan</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rekomendasi">
+        <div class="container-rekomen">
+            <div class="container-rekomen-head">
+                <p>REKOMENDASI HALLO.KOST</p>
+                <span class="dos3"></span>
+                <div class="dropdown2">
+                    <button class="dropbtn2" onclick="myFunction2()">SEMUA KOTA
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content2" id="myDropdown2">
+                        <a href="#">Bogor</a>
+                        <a href="#">Bekasi</a>
+                        <a href="#">Jakarta</a>
+                        <a href="#">Malang</a>
+                        <a href="#">Semarang</a>
+                        <a href="#">Surabaya</a>
+                        <a href="#">Tangerang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slide-1">
+                    <div class="card-promo-1">
+                        <img src="img/kos1.jpg" alt="kos1">
+                        <div class="card-text-1">
+                            <p><span
+                                    id="wnt">WANITA</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keputih,
+                                KOTA SURABAYA</p>
+                            <p><span
+                                    id="dua">MAWAR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>Rp
+                                    1.999.999</del>
+                                <span id="diskon">50%</span>
+                            </p>
+                            <p>KM.Dalam - Wifi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                    id="total">Rp 1.000.000 / bulan</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-2">
+                    <div class="card-promo-1">
+                        <img src="img/kos2.jpg" alt="kos1">
+                        <div class="card-text-1">
+                            <p><span
+                                    id="wnt">WANITA</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dinoyo,
+                                KOTA MALANG</p>
+                            <p><span id="dua">KOS
+                                    APIKK</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>Rp
+                                    1.999.999</del>
+                                <span id="diskon">50%</span>
+                            </p>
+                            <p>KM.Dalam -
+                                Wifi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                    id="total">Rp 1.000.000 / bulan</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-3">
+                    <div class="card-promo-1">
+                        <img src="img/kos3.jpg" alt="kos1">
+                        <div class="card-text-1">
+                            <p><span
+                                    id="wnt">PRIA</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seturan,
+                                YOGYAKARTA</p>
+                            <p><span id="dua">KOS
+                                    JAGUAR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>Rp
+                                    1.999.999</del>
+                                <span id="diskon">50%</span>
+                            </p>
+                            <p>KM.Dalam -
+                                Wifi&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="total">Rp
+                                    1.000.000 / bulan</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-4">
+                    <div class="card-promo-1">
+                        <img src="img/kos4.jpg" alt="kos1">
+                        <div class="card-text-1">
+                            <p><span
+                                    id="wnt">PRIA</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seturan,
+                                YOGYAKARTA</p>
+                            <p><span id="dua">KOS
+                                    JAGUAR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>Rp
+                                    1.999.999</del>
+                                <span id="diskon">50%</span>
+                            </p>
+                            <p>KM.Dalam -
+                                Wifi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                    id="total">Rp 1.000.000 / bulan</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-5">
+                    <div class="card-promo-1">
+                        <img src="img/kos1.jpg" alt="kos1">
+                        <div class="card-text-1">
+                            <p><span
+                                    id="wnt">WANITA</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keputih,
+                                KOTA SURABAYA</p>
+                            <p><span
+                                    id="dua">MAWAR</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del>Rp
+                                    1.999.999</del>
+                                <span id="diskon">50%</span>
+                            </p>
+                            <p>KM.Dalam - Wifi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                    id="total">Rp 1.000.000 / bulan</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testi">
+        <div class="container-testi">
+            <div class="container-testi-head">
+                <p>KATA MEREKA</p>
+                <span class="dos4"></span>
+            </div>
+            <div class="container-testi-card">
+                <div class="card-testi-1">
+                    <img src="img/testi-01.png" alt="testi1">
+                    <div class="testi-text-1">
+                        <p>Tony Stark</p>
+                        <hr />
+                        <p>“Dapat kos yang nyaman, sesuai dengan deskripsi dan foto. Banyak promo dan pilihan kos di
+                            setiap daerah”</p>
+                    </div>
+                </div>
+                <div class="card-testi-1">
+                    <img src="img/testi-02.png" alt="testi1">
+                    <div class="testi-text-2">
+                        <p> Andrew Deep</p>
+                        <hr />
+                        <p>“Dapat kos yang nyaman, sesuai dengan deskripsi dan foto. Banyak promo dan pilihan kos di
+                            setiap daerah”</p>
+                    </div>
+                </div>
+                <div class="card-testi-1">
+                    <img src="img/testi-03.png" alt="testi1">
+                    <div class="testi-text-3">
+                        <p>Taylor Swift</p>
+                        <hr />
+                        <p>“Dapat kos yang nyaman, sesuai dengan deskripsi dan foto. Banyak promo dan pilihan kos di
+                            setiap daerah”</p>
+                    </div>
+                </div>
+                <div class="card-testi-1">
+                    <img src="img/testi-01.png" alt="testi1">
+                    <div class="testi-text-1">
+                        <p>Tony Stark</p>
+                        <hr />
+                        <p>“Dapat kos yang nyaman, sesuai dengan deskripsi dan foto. Banyak promo dan pilihan kos di
+                            setiap daerah”</p>
+                    </div>
+                </div>
+                <div class="card-testi-1">
+                    <img src="img/testi-02.png" alt="testi1">
+                    <div class="testi-text-2">
+                        <p> Andrew Deep</p>
+                        <hr />
+                        <p>“Dapat kos yang nyaman, sesuai dengan deskripsi dan foto. Banyak promo dan pilihan kos di
+                            setiap daerah”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hubungi-kami">
+        <div class="container-hub">
+            <div class="container-hub-head">
+                <p>HUBUNGI KAMI</p>
+                <span class="dos5"></span>
+            </div>
+            <div class="hub-kontak">
+                <a href="https://web.facebook.com/inthania.nadacika/" target="_blank"><img src="img/fb.svg"
+                        alt="fb"></a> <br>
+                <a href="https://www.instagram.com/ndcika/" target="_blank"><img src="img/ig.svg" alt="ig"></a> <br>
+                <a href="https://www.linkedin.com/in/inthania-nadicika-kurniawan" target="_blank"><img
+                        src="img/twitter.svg" alt="li"></a><br>
+                <a href="https://www.linkedin.com/in/inthania-nadicika-kurniawan" target="_blank"><img
+                        src="img/tele.svg" alt="li"></a><br>
+            </div>
+            <form class="form-contact" id="myForm" onsubmit="return KirimPesan()" method="post">
+                <input class="nama" id="nama" type="text" placeholder="Nama"><br><br>
+                <input class="email" id="email" type="text" placeholder="Email"><br><br>
+                <input class="nohp" id="nohp" type="text" placeholder="Nomor Telepon"><br><br>
+                <textarea class="pesan" id="pesan" cols="72" rows="5"
+                    placeholder="Tuliskan pesan anda disini."></textarea><br><br>
+                <input class="tombol-email" type="submit" value="Kirim" onclick="KirimPesan()">
+            </form>
+            <img src="img/icon-tlp.svg" alt="tilpun" class="tilpun">
+        </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container-footer">
+            <div class="text-box">
+                <div class="text-left">
+                    <h3>Hallo.Kost</h3>
+                    <p>Hallo.Kost memanfaatkan teknologi yang berkembang menjadi aplikasi pencarian kos yang memudahkan
+                        anak kos untuk booking properti kos dan juga melakukan pembayaran kos.
+                        Saat ini kami memiliki <b>dari 2 juta kamar kos</b> yang tersebar di <b>dari 140 kota</b> di
+                        seluruh
+                        Indonesia.</p>
+                </div>
+                <div class="text-center">
+                    <h3>Kebijakan</h3>
+                    <p><a href="#">Kebijakan Privasi</a></p>
+                    <p><a href="#">Syarat dan Ketentuan Umum</a></p>
+                </div>
+                <div class="text-right">
+                    <h3>Kontak</h3>
+                    <div class="fb">
+                        <a href="https://web.facebook.com/inthania.nadacika/"><img src="img/fb.svg" alt="fb">
+                            <p style="margin-top: 5px;">Hallo.Kost</p>
+                        </a>
+                    </div>
+                    <div class="email-2">
+                        <a href="mailto:nadacika17@gmail.com"><img src="img/email.svg" alt="email">
+                            <p style="margin-top: 5px;">hallo.kost@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="ig">
+                        <a href="https://www.instagram.com/ndcika/"><img src="img/ig.svg" alt="ig">
+                            <p style="margin-top: 5px;">hallo.kost</p>
+                        </a>
+                    </div>
+                    <div class="twt">
+                        <a href="https://www.instagram.com/ndcika/"><img src="img/twitter.svg" alt="twt">
+                            <p style="margin-top: 5px;">@hallo.kost</p>
+                        </a>
+                    </div>
+                    <div class="tele">
+                        <a href="https://web.facebook.com/inthania.nadacika/"><img src="img/tele.svg" alt="tele">
+                            <p style="margin-top: 5px;">@hallo.kost</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Build by <span id="em">Inthania Nadicika Kurniawan</span></p>
+        </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        var sticky_nav_offset_top = $('#myHeader').offset().top; $(function () {
+            var sticky_nav = function () {
+                var scroll_top = $(window).scrollTop();
+                if (scroll_top > sticky_nav_offset_top) {
+                    $('#myHeader').css({ 'position': 'fixed', 'top': 0, 'left': 0 });
+                } else {
+                    $('#myHeader').css({ 'position': 'relative' });
+                }
+            };
+            sticky_nav();
+            $(window).scroll(function () {
+                sticky_nav();
+            });
+        });
+    </script>
+
+    <script>
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show2");
+        }
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn2')) {
+                var myDropdown = document.getElementById("myDropdown2");
+                if (myDropdown.classList.contains('show2')) {
+                    myDropdown.classList.remove('show2');
+                }
+            }
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
+    <script>
+        $(function () {
+            $('.card').slick({
+                infinite: false,
+                slidesToShow: 4,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+
+    <script>
+        function KirimPesan() {
+               alert("Pesan Anda Telah Terkirim");
+            }
+    </script>
+</body>
+
+</html>
